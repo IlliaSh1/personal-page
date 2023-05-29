@@ -1,0 +1,195 @@
+@use "../abstract/colors" as C;
+@use "sass:color";
+
+.label {
+    display: block;
+    position: relative;
+    margin: .5em 0;
+    &__txt {
+        color: transparent;
+        position: absolute;
+        top: .5em;
+        left: calc(1.1em + 1vw);
+    }
+
+    &__error-msg {
+        font-weight: 400;
+        color: transparent;
+        margin-top: .5em;
+        display: block;
+    }
+
+    &--row_3 {
+        grid-row: span 3;
+    }
+
+    &--select {
+        display: flex;
+        flex-direction: column;
+
+        .label__txt {
+            order: -1;
+            color: currentColor;
+            position: static;
+            top: 0;
+            left: 0;
+        }
+
+        .label__error-msg {
+            margin-top: .1em 0;
+        }
+
+        .input, .textarea {
+            margin: 0.3em 0;
+        }
+    }
+
+    &--checkbox {
+        display: flex;
+        align-items: center;
+        .label__txt {
+            position: static;
+            order: 1;
+        }
+        .input {
+            outline-color: transparent;
+            &:not(:focus):not(:placeholder-shown):valid {
+                outline-color: transparent;
+            }
+            &:not(:focus):not(:placeholder-shown):invalid {
+                outline-color: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .label {
+        &--col_2 {
+            grid-column: span 2;
+        }
+    
+    }    
+}
+
+%input-base {
+    &:autofill ~ span {
+        color: transparent;
+    }
+
+    &:not(:placeholder-shown) ~ .label__txt {
+        color: inherit;
+    }
+
+    & ~ .label__error-msg {
+        user-select: none;
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid ~ .label__error-msg {
+        color: C.getClr(invalid-txt);
+        user-select: auto;
+    }
+
+    &:not(:focus):not(:placeholder-shown):valid {
+        outline-color: C.getClr(valid-txt);
+    }
+    &:not(:focus):not(:placeholder-shown):invalid {
+        outline-color: C.getClr(invalid-txt);
+    }
+    &:focus-visible {
+        outline-color: C.getClr(focus-outline);
+        outline-width: .3em;
+    }
+
+}
+
+.input, .textarea {
+    border: none;
+    @extend %input-base;
+}
+
+@mixin input--theme_1 {
+    padding: .6em .5em;
+    display: inline-block;
+    position: relative;
+    outline-width: .25em;
+    outline-color: C.getClr(accent-dark-bg);
+
+    background-color: lighten(C.getClr(accent-dark-bg), 10%);
+    color: C.getClr(accent-light-txt);
+    &::placeholder {
+        color: white;
+    }
+    border-radius: 1rem;
+}
+
+.input {
+    margin: 1em 0px;
+    outline: .15em solid C.getClr(text);
+    &--theme_1 {
+        @include input--theme_1();
+        
+    }
+    &--theme_2 {
+        // position: relative;
+        display: inline-block;
+        color: black;
+        background-color: transparent;
+        outline: .15em solid black;
+        padding: 1.8em calc(.3em + 1vw);
+        padding-bottom: 1em;
+        border-radius: 100vh;
+        &::placeholder {
+            color: dimgray;
+        }
+        width: 100%;
+        min-height: 5vmin;
+    }
+}
+
+.textarea {
+    outline: .15em solid black;
+    display: block;
+    width: 100%;
+    min-height: 7em;
+
+    resize: none;
+
+    &::placeholder{
+        color: dimgray;
+    }
+
+    &--theme_1 {
+        @include input--theme_1();
+        border-radius: 10px;
+        
+        &::-webkit-scrollbar-track {
+            background-color: #e4e4e4;
+            border-radius: 100px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 100px;
+            border: 6px solid rgba(0, 0, 0, 0.18);
+            border-left: 0;
+            border-right: 0;
+            background-color: C.getClr(accent-dark-txt);
+        }
+        &::-webkit-scrollbar {
+            width: 20px;
+        }
+
+    }
+    
+    &--theme2 {
+        display: inline-block;
+        color: black;
+        background-color: transparent;
+        outline: .15em solid black;
+        padding: 1px 2px;
+        padding-bottom: 1em;
+        width: 100%;
+        
+    }
+
+}

@@ -1,0 +1,40 @@
+@use "sass:list";
+@use '../abstract/colors' as C;
+
+.body_hidden_scroll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.skip-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.skip-link {
+    font-size: 1.5rem;
+    z-index: -100;
+    cursor: default;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: C.getClr(accent-dark-bg);
+    color: C.getClr(light-text);
+    transform: translateY(-100%);
+    // transform: translateX(-100vw);
+
+
+
+    &:focus-visible {
+        cursor: auto;
+        user-select: auto;
+        margin: 0;
+        z-index: 100;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

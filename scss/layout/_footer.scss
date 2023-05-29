@@ -1,0 +1,51 @@
+@use "../abstract/colors" as C;
+
+.footer {
+    color: C.getClr(light-text);
+    background-color: C.getClr(accent-dark-bg);
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__copyrights {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap:min(3vw, 50px);
+    }
+
+
+}
+
+@media screen and (min-width:576px) {
+    .footer {
+        &__copyrights {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 0;
+
+            & > span:nth-child(n + 2)::before {
+                content: ' | ';
+                font-size: 1em;
+                white-space: break-spaces;
+            }
+        }
+    }
+}
+
+@media print {
+    .footer {
+        color: C.getClr(text);
+    }
+}

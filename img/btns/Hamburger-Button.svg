@@ -1,0 +1,46 @@
+<svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.85714 1.84 L31.13 1.84"
+stroke="url(#paint1_linear_13_83)"
+stroke-width="3.7"
+stroke-linecap="round">
+    <animate attributeName="d"
+        attributeType="XML"
+        to="M4.85714, 1.84 L29.13 24.15"
+        dur=".3s"
+        repeatCount="1"/>
+</path>
+<path d="M10.85714 13.00035 L31.13 13.00035"
+      stroke="url(#paint1_linear_13_83)"
+      stroke-width="3.7"
+      stroke-linecap="round">
+    <animate attributeName="d"
+        attributeType="XML"
+        to="M40.85714, 13.00035 L41.13 13.00035"
+        dur=".3s"
+        repeatCount="1"/>
+</path>
+<path d="M1.85714 24.15 L31.13 24.15"
+stroke="url(#paint1_linear_13_83)"
+stroke-width="3.7"
+stroke-linecap="round">
+    <animate attributeName="d"
+        attributeType="XML"
+        to="M4.85714 24.15 L29.13 1.84"
+        dur=".3s"
+        repeatCount="1"/>
+</path>
+<defs>
+<linearGradient id="paint0_linear_13_83" x1="-8.62252e-09" y1="3.46667" x2="36.0395" y2="3.46666" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C0B7E8"/>
+<stop offset="1" stop-color="#8176AF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_13_83" x1="-3.90789" y1="26" x2="33" y2="26" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C0B7E8"/>
+<stop offset="1" stop-color="#8176AF"/>
+</linearGradient>
+<linearGradient id="paint2_linear_13_83" x1="5.21062" y1="13" x2="33.0001" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C0B7E8"/>
+<stop offset="1" stop-color="#8176AF"/>
+</linearGradient>
+</defs>
+</svg>

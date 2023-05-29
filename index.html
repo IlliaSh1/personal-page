@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/logo/logo.svg">
+    <title>Shamarov Illia</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+    <div class="body__wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="wrapper header__container">
+                <a href="#about" class="skip-link link">Skip menu</a>
+
+                <a href="/" class="header__logo link link--hover_off" aria-label="Go to main page">
+                    shamarov.su
+                </a>
+                <!-- BURGER-MENU BUTTON -->
+                <button id="=header-menu" class="header__menu-toggle menu-toggle btn btn--theme_off hidden-after-md print-hidden" aria-label="Menu toggle button">
+                    <svg class="burger-menu header__toggle-img wauto" viewBox="0 0 33 26" fill="none" width="32" height="25" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path class="burger-menu__top-line" d="M2 2 L31 2" stroke="currentColor" stroke-width="3.7" stroke-linecap="round"></path>
+                            <path class="burger-menu__middle-line" d="M10 13 L31 13" stroke="currentColor" stroke-width="3.7" stroke-linecap="round"></path>
+                            <path class="burger-menu__bottom-line" d="M2 24 L31 24" stroke="currentColor" stroke-width="3.7" stroke-linecap="round"></path>
+                        </g>
+                    </svg>
+                </button>
+
+                <nav id="header-menu" class="header__menu">
+                    <div class="header__menu-container">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="#about" class="link">About</a></li>
+                            <li class="header__menu-item"><a href="#skills" class="link">Skills</a></li>
+                            <li class="header__menu-item"><a href="#projects" class="link">Projects</a></li>
+                            <li class="header__menu-item"><a href="#contacts" class="link">Contacts</a></li>
+                            <li class="header__menu-item"><a href="#feedback" class="link">Feedback</a></li>                            
+
+                        </ul>
+                        <div class="header__menu-btns">
+                            <a href="https://github.com/IlliaSh1" class="header__menu-btn link link--theme_btn_anim_1" target="_blank">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                My Git
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- MAIN -->
+        <main class="main">
+            <!-- About -->
+            <section id="about" class="about">
+                <div class="wrapper about__container">
+                    <div class="hero-block">
+                        <h1 class="hidden">Shamarov Illia. Portfolio page</h1>
+                        <div class="hero-block__left">
+
+                            <p class="hero-block__desc">
+                                <span>Hi! I'm</span><br class="hidden-before-lg">
+                                <span>Shamarov Illia</span><br>
+                                <span class="txt txt--gradient_accent_2">Begginer Frontend</span> and<br>
+                                <span class="txt txt--gradient_accent_2">Backend Developer</span> from Moscow Polytech
+                            </p>
+                            <a class="hero-block__btn link link--theme_btn_add_3" href="#projects">See My Works</a>
+                        </div>
+
+                        <div class="hero-block__right">
+                            <img class="hero-block__img" 
+                                src="img/about/My_photo.webp" alt="Picture of myself"
+                                width="390" height="390">
+                        </div>
+                        <img class="hero-block__arrow-down print-hidden"
+                            src="img/elements/arrow-down-white.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- Skills -->
+            <section id="skills" class="skills">
+                <div class="wrapper skills__container">
+                    <h2 class="skills__title">Skills</h2>
+                    <ul class="skills-list">
+                        <li class="skills-list__item">
+                            <h3 class="skills-list__item-title">Frontend</h3>
+                            <ul class="skills-list__cards">
+                                <li class="skill-card">
+                                    <img src="img/skills/html-5.svg" alt="Html logo" class="skill-card__img" width="70">
+                                    <div class="skill-card__desc">
+                                        <h4 class="skill-card__title">HTML</h4>
+                                        
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <img src="img/skills/css-3.svg" alt="Css logo" class="skill-card__img" width="70">
+                                    <div class="skill-card__desc">
+                                        <h4 class="skill-card__title">CSS & SCSS</h4>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skills-list__item">
+                            <h3 class="skills-list__item-title">Backend</h3>
+                            <ul class="skills-list__cards">
+                                <li class="skill-card">
+                                    <img src="img/skills/python.svg" alt="Python logo" class="skill-card__img" width="70">
+                                    <div class="skill-card__desc">
+                                        <h4 class="skill-card__title">Python</h4>
+                                        
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <img src="img/skills/javascript-shield.svg" alt="Javascript logo" class="skill-card__img" width="70">
+                                    <div class="skill-card__desc">
+                                        <h4 class="skill-card__title">JavaScript</h4>
+                                        
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="skills-list__item">
+                            <h3 class="skills-list__item-title">Others</h3>
+                            <ul class="skills-list__cards">
+                                <li class="skill-card">
+                                    <img src="img/skills/Postgresql_elephant.svg" alt="PostgreSQL logo" class="skill-card__img" width="70">
+                                    <div class="skill-card__desc">
+                                        <h4 class="skill-card__title">PostgreSQL</h4>
+                                        
+                                    </div>
+                                </li>
+                                <li class="skill-card">
+                                    <img src="img/skills/github.svg" alt="Github logo" class="skill-card__img" width="70">
+                                    <div class="skill-card__desc">
+                                        <h4 class="skill-card__title">Github</h4>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section id="projects" class="projects">
+                <div class="wrapper projects__container">
+                    <h2 class="projects__title">Projects</h2>
+                    <a href="#contacts" class="skip-link link">Go to contacts</a>
+                    <ul class="projects-list">
+                        <!-- Tic Tac Toe -->
+                        <li class="projects-list__item flip-card">
+                            <div class="flip-card__inner">
+                                <div class="flip-card__front">
+                                    <h3 class="flip-card__title">Tic tac toe</h3>
+                                    <img src="img/projects/Tic_tac_toe.webp" alt="Blue-green calculator" class="flip-card__img" width="420">
+                                    <div class="flip-card__front-footer">
+                                        <div class="flip-card__stars">
+
+                                        </div>
+                                        <img src="img/elements/arrow-circle-up-right-white.svg" alt="Hover Me!" class="flip-card__front-arrow">
+                                    </div>
+                                </div>
+                                <div class="flip-card__back">
+                                    <div class="flip-card__back-header">
+                                        <span class="flip-card__title">Tic tac toe</span>
+                                        <div class="flip-card__skills">
+                                            
+                                            <ul class="flip-card__skills-list">
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">Python</li>
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">Pygame</li>
+                                            </ul>
+                                        </div>
+                                        <p class="flip-card__desc">With minimax algorithm bot will not give you a chance to win.</p>
+                                    </div>
+                                    <div class="flip-card__btns">
+
+                                        <a href="https://github.com/IlliaSh1/Tic-Tac-Toe" class="flip-card__link link link--theme_btn" target="_blank">View project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Hydra VR -->
+                        <li class="projects-list__item flip-card">
+                            <div class="flip-card__inner">
+                                <div class="flip-card__front">
+                                    <h3 class="flip-card__title">Hydra VR</h3>
+                                    <img src="img/projects/Hydra_VR.webp" alt="Hydra VR web page" class="flip-card__img" width="420">
+                                    <div class="flip-card__front-footer">
+                                        <div class="flip-card__stars">
+
+                                        </div>
+                                        <img src="img/elements/arrow-circle-up-right-white.svg" alt="Hover Me!" class="flip-card__front-arrow">
+                                    </div>
+                                </div>
+                                <div class="flip-card__back">
+                                    <div class="flip-card__back-header">
+                                        <span class="flip-card__title">Hydra VR</span>
+                                        <div class="flip-card__skills">
+                                            
+                                            <ul class="flip-card__skills-list">
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">HTML</li>
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">CSS & SCSS</li>
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">JavaScript</li>
+                                            </ul>
+                                        </div>
+                                        <p class="flip-card__desc">Adaptive web site</p>
+                                    </div>
+                                    <div class="flip-card__btns">
+
+                                        <a href="http://hydra-vr.std-2133.ist.mospolytech.ru/" class="flip-card__link link link--theme_btn" target="_blank">View project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Recursive Calculator -->
+                        <li class="projects-list__item flip-card">
+                            <div class="flip-card__inner">
+                                <div class="flip-card__front">
+                                    <h3 class="flip-card__title">Recursive Calculator</h3>
+                                    <img src="img/projects/recursive_calculator.webp" alt="Blue-green calculator" class="flip-card__img" width="420">
+                                    <div class="flip-card__front-footer">
+                                        <div class="flip-card__stars">
+
+                                        </div>
+                                        <img src="img/elements/arrow-circle-up-right-white.svg" alt="Hover Me!" class="flip-card__front-arrow">
+                                    </div>
+                                </div>
+                                <div class="flip-card__back">
+                                    <div class="flip-card__back-header">
+
+                                        <span class="flip-card__title">Recursive Calculator</span>
+                                        <div class="flip-card__skills">
+                                            
+                                            <ul class="flip-card__skills-list">
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">Python</li>
+                                                <li class="flip-card__skills-item btn btn--theme_add_1">Algorithms</li>
+                                            </ul>
+                                        </div>
+                                        <p class="flip-card__desc">It uses recursive function to calculate the result.</p>
+                                    </div>
+                                    <div class="flip-card__btns">
+
+                                        <a href="http://illia-shamarov-serv-web-dev-base.std-2133.ist.mospolytech.ru/lab4/" class="flip-card__link link link--theme_btn" target="_blank">View project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Contacts -->
+            <section id="contacts" class="contacts">
+                <div class="wrapper contacts__container">
+                    <h4 class="contacts__title">Contacts</h4>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                                <span>Email</span> <a class="link link--theme_btn_2" href="mailto:illia_sh@mail.ru">illia_sh@mail.ru</a> 
+                        </li>
+                        <li class="contacts-list__item"><span>Phone</span> <a class="link link--theme_btn_2" href="tel:+79309120342">+7 (930) 921-03-42</a></li>
+                        <li class="contacts-list__item"><span>VK</span> <a class="link link--theme_btn_2 link_external" href="https://vk.com/id378207196" target="_blank">Shamarov Illia</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer" id="footer">
+            <div class="wrapper footer__container">
+                <div class="footer__copyrights">
+                    <span>Shamarov Illia</span>
+                    <span>221-321</span>
+                    <span>Moscow Polytech</span>
+                </div>
+            </div>
+        </footer>
+        <!-- SCRIPTS -->
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
